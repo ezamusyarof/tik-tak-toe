@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tak Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jscript.js"></script>
+</head>
+<body>
+    <div class="card">
+        <img src="img-head.png" alt="head" class="head">
+        <hr class="garis">
+        <div class="info">
+            <a class="reset" onclick="reset_score()"><img src="img-reset.png" alt="reset-score"></a>
+            <div class="score-box">
+                <p><b>Score : </b></p>
+                <p id="user">0</p>
+                <p>vs</p>
+                <p id="bot">0</p>
+            </div>
+            <p><a class="restart" onclick="reset()">Restart</a></p>
+        </div>
+        <div class="box">
+            <div class="raw">
+                <button id="btn-1" class="mini-box" onclick="pilihX('1')">
+                    <p class="si-x" id="1">X</p>
+                </button>
+                <button id="btn-2" class="mini-box" onclick="pilihX('2')">
+                    <p class="si-x" id="2">X</p>
+                </button>
+                <button id="btn-3" class="mini-box" onclick="pilihX('3')">
+                    <p class="si-x" id="3">X</p>
+                </button>
+            </div>
+            <div class="raw">
+                <button id="btn-4" class="mini-box" onclick="pilihX('4')">
+                    <p class="si-x" id="4">X</p>
+                </button>
+                <button id="btn-5" class="mini-box" onclick="pilihX('5')">
+                    <p class="si-x" id="5">X</p>
+                </button>
+                <button id="btn-6" class="mini-box" onclick="pilihX('6')">
+                    <p class="si-x" id="6">X</p>
+                </button>
+            </div>
+            <div class="raw">
+                <button id="btn-7" class="mini-box" onclick="pilihX('7')">
+                    <p class="si-x" id="7">X</p>
+                </button>
+                <button id="btn-8" class="mini-box" onclick="pilihX('8')">
+                    <p class="si-x" id="8">X</p>
+                </button>
+                <button id="btn-9" class="mini-box" onclick="pilihX('9')">
+                    <p class="si-x" id="9">X</p>
+                </button>
+            </div>
+        </div>
+        <p id="ngetes1"></p>
+        <p id="ngetes2"></p>
+        <p id="ngetes3"></p>
+    </div>
+</body>
+
+</html>
